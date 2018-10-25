@@ -1,5 +1,5 @@
 import React from 'react';
-import UpdateForm from '../FriendsList/UpdateForm'
+import UpdateFriendForm from './UpdateFriendForm.js'
 
 
 const Friend = props => {
@@ -7,7 +7,7 @@ const Friend = props => {
       <p>{props.name}</p>
       <p>{props.age}</p>
       <p>{props.email}</p>
-        <UpdateForm updateFieldHandler={props.updateFieldHandler} emailHandler={props.emailHandler} ageHandler={props.ageHandler} nameHandler={props.nameHandler}/>
+        <UpdateFriendForm updateFieldHandler={props.updateFieldHandler} emailHandler={props.emailHandler} ageHandler={props.ageHandler} nameHandler={props.nameHandler}/>
        
   </div>
 };
